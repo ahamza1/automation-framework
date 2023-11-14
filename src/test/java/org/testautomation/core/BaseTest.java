@@ -1,4 +1,4 @@
-package org.testautomation;
+package org.testautomation.core;
 
 import org.testautomation.core.environment.Environment;
 import org.testng.annotations.BeforeSuite;

@@ -1,13 +1,13 @@
-package org.testautomation.apps;
+package org.testautomation.app.api;
 
 import org.apache.http.HttpStatus;
-import org.testautomation.BaseAPITest;
+import org.testautomation.core.BaseAPITest;
+import org.testautomation.core.constants.TestGroup;
 import org.testng.annotations.Test;
-import org.testautomation.apps.api.clients.PetstoreAPIClient;
 
 public class ExampleAPITests extends BaseAPITest {
 
-    @Test(groups = "api.test.example")
+    @Test(groups = TestGroup.API)
     public void verifyCanGetStoreInventory() {
         new PetstoreAPIClient()
                 .getStoreInventory()

@@ -1,4 +1,4 @@
-package org.testautomation.apps.api.clients;
+package org.testautomation.app.api;
 
 import io.restassured.RestAssured;
 import org.testautomation.core.api.BaseAPIClient;
