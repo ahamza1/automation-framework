@@ -32,7 +32,7 @@ https://martinfowler.com/bliki/PageObject.html)
 - Write Web UI tests using Selenium
 - Write Mobile (iOS, Android) tests using Appium
 
-### Configuration
+## Configuration
 
 [`environment.conf`](https://github.com/ahamza1/automation-framework/blob/master/src/test/resources/environment.conf) - [HOCON](https://github.com/lightbend/config) file is a control center for the project. Put needed properties and get them in the code with functionality included in [`Environment.java`](https://github.com/ahamza1/automation-framework/blob/master/src/main/java/org/testautomation/core/environment/Environment.java)
 
