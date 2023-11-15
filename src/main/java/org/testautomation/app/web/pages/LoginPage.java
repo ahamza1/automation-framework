@@ -10,7 +10,7 @@ import org.testautomation.core.ui.BasePage;
 /**
  * Page Object encapsulates the Log-in page.
  */
-public class LoginPage extends BasePage {
+public class LoginPage extends BasePage<LoginPage> {
     @FindBy(className = "login_logo")
     private WebElement titleText;
 
@@ -23,9 +23,9 @@ public class LoginPage extends BasePage {
     @FindBy(id = "login-button")
     private WebElement loginButton;
 
-    public static LoginPage navigate() {
+    @Override
+    public void load() {
         DriverFactory.getDriver().get(Environment.get(Configuration.WEB_BASE_URI));
-        return new LoginPage();
     }
 
     public String getTitle() {
@@ -38,5 +38,4 @@ public class LoginPage extends BasePage {
         loginButton.click();
         return new ProductsPage();
     }
-
 }

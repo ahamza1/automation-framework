@@ -13,14 +13,14 @@ import java.util.Map;
 public abstract class BaseWebTest extends BaseTest {
 
     @BeforeMethod(groups = TestGroup.WEB)
-    public void setupDriver() {
+    public void testSetup() {
         String driver = Environment.get(Configuration.DRIVER);
         Map<String, Object> capabilities = Environment.getOrDefault(driver, new HashMap<>());
         DriverFactory.setDriver(driver, capabilities);
     }
 
     @AfterMethod(groups = TestGroup.WEB)
-    public void quitDriver() {
+    public void testCleanup() {
         DriverFactory.quitDriver();
     }
 
