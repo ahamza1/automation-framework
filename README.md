@@ -6,14 +6,8 @@ Automation project template to fast-track tests setup for Web, Mobile (iOS, Andr
 
 - [Project Overview](#project-overview)
 - [Features](#features)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Configuration](#configuration)
+- [Configuration](#configuration)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Project Overview
 
