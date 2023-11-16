@@ -33,9 +33,11 @@ https://martinfowler.com/bliki/PageObject.html)
 ## Usage
 
 Run tests by executing command from the root of the project folder:
-- Linux/MacOS: ./gradlew clean test -Denv=desktop.chrome -DincludeGroups=web.test.example
-- Windows: ./gradlew.bat clean test -Denv="desktop.chrome" -DincludeGroups="web.test.example"
-- API: ./gradlew clean test -Denv=api -DincludeGroups=api.test.example
+- Web Tests (Linux/MacOS): `./gradlew clean test -Denv=desktop.chrome -DincludeGroups=web.test.example`
+- API Tests (Linux/MacOS): `./gradlew clean test -Denv=api -DincludeGroups=api.test.example`
+- Web Tests (Windows): `./gradlew.bat clean test -Denv="desktop.chrome" -DincludeGroups="web.test.example"`
+- API Tests (Windows): `./gradlew.bat clean test -Denv="api" -DincludeGroups="api.test.example"`
+
 
 
 
